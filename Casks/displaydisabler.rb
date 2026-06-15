@@ -7,7 +7,7 @@ cask "displaydisabler" do
   desc "Menu-bar app for total control of your Mac's displays"
   homepage "https://github.com/oabdrabo/DisplayDisabler"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on arch: :arm64
 
   app "DisplayDisabler.app"
