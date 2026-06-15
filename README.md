@@ -39,11 +39,7 @@ brew untap oabdrabo/tap                     # optional: remove the tap
 | Path | Purpose |
 |---|---|
 | [`Casks/displaydisabler.rb`](Casks/displaydisabler.rb) | The cask definition — version, checksum, install / uninstall / zap logic. |
-| [`.github/workflows/update-cask.yml`](.github/workflows/update-cask.yml) | CI that auto-bumps the cask's version + `sha256` whenever a new DisplayDisabler release is published. |
-
-## Automation
-
-The cask keeps itself in sync with upstream releases — a scheduled GitHub Actions workflow checks for a newer [DisplayDisabler release](https://github.com/oabdrabo/DisplayDisabler/releases), recomputes the artifact checksum, and commits the bump. No manual editing required.
+| [`.github/workflows/update-cask.yml`](.github/workflows/update-cask.yml) | Scheduled CI that auto-bumps the cask's version + `sha256` whenever a new [DisplayDisabler release](https://github.com/oabdrabo/DisplayDisabler/releases) is published — no manual editing required. |
 
 ## About DisplayDisabler
 
