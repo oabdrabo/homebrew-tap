@@ -1,11 +1,11 @@
-name: Update DisplayDisabler cask
+name: Update DisplayDeck cask
 
 on:
   schedule:
     - cron: "0 */6 * * *"     # every 6h: pick up new releases
   workflow_dispatch:           # run it manually anytime
   repository_dispatch:
-    types: [displaydisabler-release]   # optional instant trigger from the app repo
+    types: [displaydeck-release]   # optional instant trigger from the app repo
 
 permissions:
   contents: write
@@ -20,8 +20,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          repo="oabdrabo/DisplayDisabler"
-          cask="Casks/displaydisabler.rb"
+          repo="oabdrabo/DisplayDeck"
+          cask="Casks/displaydeck.rb"
 
           ver=$(gh release view --repo "$repo" --json tagName -q '.tagName' | sed 's/^v//')
           cur=$(grep -m1 -E '^\s*version ' "$cask" | sed -E 's/.*"([^"]+)".*/\1/')
@@ -29,7 +29,7 @@ jobs:
           if [ "$ver" = "$cur" ]; then echo "already up to date"; exit 0; fi
 
           gh release download "v$ver" --repo "$repo" \
-             --pattern 'DisplayDisabler.app.zip' --output app.zip --clobber
+             --pattern 'DisplayDeck.app.zip' --output app.zip --clobber
           sha=$(sha256sum app.zip | cut -d' ' -f1)
           rm -f app.zip
           echo "new version=$ver sha=$sha"
@@ -40,4 +40,4 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "$cask"
-          git commit -m "displaydisabler $ver" && git push
+          git commit -m "displaydeck $ver" && git push
