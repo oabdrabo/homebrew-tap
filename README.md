@@ -5,7 +5,7 @@
 **Homebrew tap for [DisplayDeck](https://github.com/oabdrabo/DisplayDeck)** — a tiny macOS menu-bar app for total control of your Mac's displays.
 
 [![Update cask](https://github.com/oabdrabo/homebrew-tap/actions/workflows/update-cask.yml/badge.svg)](https://github.com/oabdrabo/homebrew-tap/actions/workflows/update-cask.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/oabdrabo/DisplayDeck/blob/main/LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/oabdrabo/DisplayDeck/blob/main/LICENSE)
 
 </div>
 
