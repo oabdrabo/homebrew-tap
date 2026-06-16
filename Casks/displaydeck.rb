@@ -22,7 +22,7 @@ cask "displaydeck" do
   zap trash: "~/Library/Preferences/com.local.DisplayDeck.plist"
 
   caveats <<~CAV
-    DisplayDeck is ad-hoc signed and built on private APIs.
+    DisplayDeck is self-signed (not notarized) and built on private APIs.
       - Display / HiDPI / brightness / warmth work out of the box.
       - Window transparency, blur, keep-on-top and the picture-in-picture
         pin need SIP disabled + the -arm64e_preview_abi boot-arg.
