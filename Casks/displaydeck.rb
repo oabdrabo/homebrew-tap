@@ -7,7 +7,7 @@ cask "displaydeck" do
   desc "Menu-bar app for total control of your Mac's displays and windows"
   homepage "https://github.com/oabdrabo/DisplayDeck"
 
-  depends_on macos: :sonoma
+  depends_on macos: ">= :sonoma"
   depends_on arch: :arm64
 
   app "DisplayDeck.app"
