@@ -1,6 +1,6 @@
 cask "displaydeck" do
-  version "2.3.0"
-  sha256 "7fe51401477a50f6e228b28db2d80fea758105644683973b417aef1d152dc99b"
+  version "2.3.1"
+  sha256 "4a0d0735cc80b6ca3cd9dd94652391bf9f4d5cb84225df056458a603db988e8a"
 
   url "https://github.com/oabdrabo/DisplayDeck/releases/download/v#{version}/DisplayDeck.app.zip"
   name "DisplayDeck"
