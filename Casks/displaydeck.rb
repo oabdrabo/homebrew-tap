@@ -1,5 +1,5 @@
 cask "displaydeck" do
-  version "2.4.3"
+  version "2.4.4"
   sha256 "ed885f7f735a1d859d0d2ff6219e0ca137b0191b21e37785dcfe50ce028ffb54"
 
   url "https://github.com/oabdrabo/DisplayDeck/releases/download/v#{version}/DisplayDeck.app.zip"
