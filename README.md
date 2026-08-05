@@ -36,9 +36,9 @@ brew untap oabdrabo/tap                     # optional: remove the tap
 
 ## What's in here
 
-| Path | Purpose |
-|---|---|
-| [`Casks/displaydeck.rb`](Casks/displaydeck.rb) | The cask definition - version, checksum, install / uninstall / zap logic. |
+| Path                                                                     | Purpose                                                                                                                                                                                      |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`Casks/displaydeck.rb`](Casks/displaydeck.rb)                           | The cask definition - version, checksum, install / uninstall / zap logic.                                                                                                                    |
 | [`.github/workflows/update-cask.yml`](.github/workflows/update-cask.yml) | Scheduled CI that auto-bumps the cask's version + `sha256` whenever a new [DisplayDeck release](https://github.com/oabdrabo/DisplayDeck/releases) is published - no manual editing required. |
 
 ## About DisplayDeck

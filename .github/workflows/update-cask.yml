@@ -2,10 +2,10 @@ name: Update DisplayDeck cask
 
 on:
   schedule:
-    - cron: "0 */6 * * *"     # every 6h: pick up new releases
-  workflow_dispatch:           # run it manually anytime
+    - cron: "0 */6 * * *" # every 6h: pick up new releases
+  workflow_dispatch: # run it manually anytime
   repository_dispatch:
-    types: [displaydeck-release]   # optional instant trigger from the app repo
+    types: [displaydeck-release] # optional instant trigger from the app repo
 
 permissions:
   contents: write
