@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "gh-oabdrabo-homebrew-tap",
+      "name": "homebrew-tap",
       "devDependencies": {
         "prettier": "latest",
       },
