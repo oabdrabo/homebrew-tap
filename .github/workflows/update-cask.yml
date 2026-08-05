@@ -20,7 +20,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          repo="oabdrabo/DisplayDeck"
+          repo="pyxis3-ai/displaydeck"
           cask="Casks/displaydeck.rb"
 
           ver=$(gh release view --repo "$repo" --json tagName -q '.tagName' | sed 's/^v//')

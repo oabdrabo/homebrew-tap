@@ -2,10 +2,10 @@ cask "displaydeck" do
   version "2.8.2"
   sha256 "0c593920c4bf4a8e3cc2c07a410a0556a5590703f1e154756589d697cc5edd1f"
 
-  url "https://github.com/oabdrabo/DisplayDeck/releases/download/v#{version}/DisplayDeck.app.zip"
+  url "https://github.com/pyxis3-ai/displaydeck/releases/download/v#{version}/DisplayDeck.app.zip"
   name "DisplayDeck"
   desc "Menu-bar app for total control of your Mac's displays and windows"
-  homepage "https://github.com/oabdrabo/DisplayDeck"
+  homepage "https://github.com/pyxis3-ai/displaydeck"
 
   depends_on macos: :sonoma
   depends_on arch: :arm64
